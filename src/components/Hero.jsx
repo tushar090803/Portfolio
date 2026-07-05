@@ -1,4 +1,5 @@
 import { profile, availability } from "../data.js";
+import myPic from "../assets/pic.jpg"
 
 function Silhouette() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
       <div className="badge">
         <div className="badge-photo">
           {profile.photo ? (
-            <img src={profile.photo} alt={profile.name} />
+            <img src={myPic} alt={profile.name} />
           ) : (
             <Silhouette />
           )}
